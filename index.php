@@ -1,7 +1,7 @@
 <?php
 ini_set("display_errors", 1);
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-  $link = mysqli_connect("127.0.0.1", "root", "", "teste");
+  $link = mysqli_connect("127.0.0.1", "adm", "123321", "teste");
  $usuario = $_POST['usuario'];
  $senha = $_POST['senha'];
  $query = "select usuario, senha from usuarios where usuario='$usuario' and senha= '$senha'";
