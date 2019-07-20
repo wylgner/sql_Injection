@@ -25,3 +25,20 @@ class Conexao {
         }
     }
 }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Título da página</title>
+  <meta charset="utf-8">
+</head>
+<body>
+ Teste sql injection
+ <form action="index.php" method="POST">
+  Usuario:<br>
+  <input type="text" name="usuario"><br> 
+  Senha:<br> 
+  <input type="text" name="senha">
+  <input type="submit" value="logar">
+</form>
+</body>
+</html>
