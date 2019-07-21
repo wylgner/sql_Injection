@@ -18,10 +18,10 @@ $stmt->bindParam(':senha', $senha);
 $stmt->execute();
 
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+print_r($users);
+echo 'aqt';
 if (count($users) <= 0) {
-    echo "Usuario ou senha incorretos";
-    exit;
+    echo "Usuaddrio ou senha incorretos";
 } else {
     echo "logado com sucesso";
 }
